@@ -1,0 +1,5 @@
+{
+  "name": "Move",
+  "description": "An urban transportation app inspired by Uber, featuring a real-time map, ride requests, and simulated integration with Google Maps/Supabase.",
+  "requestFramePermissions": []
+}
