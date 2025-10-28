@@ -39,6 +39,13 @@
         from { transform: translateX(0); }
         to { transform: translateX(-100%); }
       }
+      .animate-slide-in-up {
+        animation: slideInUp 0.3s ease-out;
+      }
+      @keyframes slideInUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+      }
       /* --- Phone Frame Styles --- */
       .phone-frame {
           position: relative;
@@ -80,11 +87,20 @@
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.44.4/+esm"
+    "@supabase/supabase-js": "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.44.4/+esm",
+    "vite": "https://aistudiocdn.com/vite@^7.1.11",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.4",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "url": "https://aistudiocdn.com/url@^0.11.4"
   }
 }
 </script>
+<!-- 
+  NOTE: For the map to work, this key must be valid and linked to a 
+  Google Cloud project with billing enabled.
+-->
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZjmyI4ZWuGoPH0scF4d8Uw1gEfbnrz4w&libraries=places"></script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <div class="phone-frame">

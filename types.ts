@@ -9,8 +9,8 @@ export enum Screen {
   Payments,
   Support,
   ForgotPassword,
+  ResetPassword,
   EditProfile,
-  RequestRide,
   Settings,
   ChangePassword,
   HelpCenter,
@@ -21,4 +21,8 @@ export enum Screen {
   SearchDestination,
   LoginWithGoogle,
   LoginWithApple,
+  AddCard,
+  Rating,
+  ScheduledRides,
+  Chat,
 }
